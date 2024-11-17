@@ -4,7 +4,17 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+/*
+https://demoqa.com/ sitesinde
+1.Web sayfası açılır
+2.Elements başlığına gidilir.
+3. Web Tables alt başlığına gidilir.
+4.Add butonuna tıklanır.
+5.Tüm gerekli bilgiler doldurulur.
+6.Submit edilir
+7.Quit ile proje bitirilir.
 
+ */
 public class Main {
     public static void main(String[]args){
 
