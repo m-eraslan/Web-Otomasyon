@@ -1,21 +1,22 @@
 package pages;
+import example.BasePage;
 import example.BaseTest;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-public class TabBarPage extends BaseTest {
+public class TabBarPage extends BasePage {
 
-    WebDriver driver;
-    Actions actions;
-    private TabBarPage(WebDriver driver){
-        this.driver=driver;
+    public TabBarPage(Actions actions){
+        super(actions);
     }
-    private TabBarPage(Actions actions){
-        this.actions=actions;
+    public TabBarPage(WebDriver driver){
+        super(driver);
     }
+
 
     @FindBy(id = "nav-link-accountList-nav-line-1")
     private WebElement hesapadı;
@@ -31,7 +32,6 @@ public class TabBarPage extends BaseTest {
 
     @FindBy(name = "field-keywords")
     private WebElement searchbox;
-
 
 
     public void hesapduruş(){
